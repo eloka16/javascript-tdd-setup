@@ -30,4 +30,29 @@ describe("Test sum of prime numbers less than or equal to a number", function() 
       lib.sumOfPrimes(arr) == undefined
     )
   })
+  it ("should return undefined for float", function() {
+    assert(
+      lib.sumOfPrimes(4.3) == undefined
+    )
+  })  
+  it("should return undefined for -ve value", function() {
+    assert(
+      lib.sumOfPrimes(-2) == undefined);
+  });
+  it("should return undefined for no input", function() {
+    assert(
+      lib.sumOfPrimes("") == undefined
+    )
+  })
+  it("should return undefined if input is string", function() {
+    assert(
+      lib.sumOfPrimes("str") == undefined
+    );
+  })
+  
+  it ("should return undefined for string", function () {
+  assert(
+    lib.sumOfPrimes("boy") == undefined
+  )
+  })
 });
