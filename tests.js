@@ -24,4 +24,10 @@ describe("Test sum of prime numbers less than or equal to a number", function() 
       lib.sumOfPrimes(1) == undefined
     )
   })
+  it ("should return undefined for array input", function () {
+    var arr = [2,3,1,4]
+    assert(
+      lib.sumOfPrimes(arr) == undefined
+    )
+  })
 });
